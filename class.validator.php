@@ -205,11 +205,11 @@ class Validator {
     public function isAlphanumeric($string, $allow_only_one_space_between_words=false) {
             
         if (!$allow_only_one_space_between_words) {
-                if (preg_match(self::PATTERN_ALPHANUMERIC, $number)) {
+                if (preg_match(self::PATTERN_ALPHANUMERIC, $string)) {
                         return true;
                 }
         } else {
-                if (preg_match(self::PATTERN_ALPHANUMERIC_ONLY_ONE_SPACE_BETWEEN_WORDS, $number)) {
+                if (preg_match(self::PATTERN_ALPHANUMERIC_ONLY_ONE_SPACE_BETWEEN_WORDS, $string)) {
                         return true;
                 }
         }
